@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../main.css">
+    <script src="https://kit.fontawesome.com/0e99801d91.js" crossorigin="anonymous"></script>
+    <style>
+      
+      .ttower_main{
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .ttower{
+        height: auto;
+        width: 70%;
+        padding: 5vh;
+        margin: 5vh,3vw;
+      }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+          <nav>
+            <img src="../images/atlaspk.png" class="logo">
+            <ul id="sidemenu">
+              <li><a href="/index.html">Home</a></li>
+             
+              <li><a href="/portfolio.html">Work</a></li>
+              <li><a href="/contact.html">Contact</a></li>
+              <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+          </nav>
+        </div>
+        <h1 style="text-align: center; font-size: 40px;">Interior Design</h1>
+        <p id="para">In this 3BHK flat designed for a family of five, a modern theme unfolds with a personalized touch. The retired father's space exudes sophistication with warm neutrals, while his wife's domain radiates comfort with soft pastels. The son's area embraces a vibrant palette, reflecting his dynamic personality, while the daughter's space incorporates calming blues. The daughter-in-law's corner balances elegance and modernity with muted tones. Together, the interior design weaves a cohesive narrative, blending individual tastes into a harmonious and stylish family haven."
+        </p>
+        <div class="ttower_main" >
+          <img class="ttower" src="../images/Architecture page co ntent/Foe arch website/INTERIOR DESIGN/1.INTERIOR.jpg"  >
+    
+          <img class="ttower" src="../images/Architecture page co ntent/Foe arch website/INTERIOR DESIGN/2,INTERIOR.jpg" >
+    
+    
+          <img class="ttower" src="../images/Architecture page co ntent/Foe arch website/INTERIOR DESIGN/3.INTERIROR.jpg" >
+    
+    
+          <img class="ttower" src="../images/Architecture page co ntent/Foe arch website/INTERIOR DESIGN/4.INTERIOR.jpg" >
+    
+    
+          <img class="ttower" src="../images/Architecture page co ntent/Foe arch website/INTERIOR DESIGN/5.INTERIROR.jpg" >
+    
+    
+          <img class="ttower" src="../images/Architecture page co ntent/Foe arch website/INTERIOR DESIGN/6.INTERIROR.jpg" >
+    
+    
+          
+    
+        </div>
+       </div>
+       <script>
+        var sidem=document.getElementById("sidemenu");
+        function openmenu(){
+          sidem.style.right='0';
+        }
+        function closemenu(){
+          sidem.style.right='-200px';
+        }
+    
+      </script>
+</body>
+</html>

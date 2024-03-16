@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../main.css">
+    <script src="https://kit.fontawesome.com/0e99801d91.js" crossorigin="anonymous"></script>
+    <style>
+     
+      .ttower_main{
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .ttower{
+        height: auto;
+        width: 70%;
+        padding: 5vh;
+        margin: 5vh,3vw;
+      }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+          <nav>
+            <img src="../images/atlaspk.png" class="logo">
+            <ul id="sidemenu">
+              <li><a href="/index.html">Home</a></li>
+              
+              <li><a href="/portfolio.html">Work</a></li>
+              <li><a href="/contact.html">Contact</a></li>
+              <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+          </nav>
+        </div>
+        <h1 style="text-align: center; font-size: 40px;">Municipal Drawing</h1>
+        <p id="para">The municipal drawing design for this site in Bandra, Mumbai, meticulously adheres to the Development Control and Promotion Regulations (DCPR) with a height restriction of 75 meters. The project incorporates two basements to efficiently manage parking and utilities. The architectural plan harmoniously integrates with the urban fabric, ensuring a balance between aesthetics and functionality while adhering to municipal guidelines. </p>
+        <div class="ttower_main" >
+          <img class="ttower" src="../images/Architecture page co ntent/Foe arch website/Municipal drawing/1.jpg"  >
+    
+          <img class="ttower" src="../images/Architecture page co ntent/Foe arch website/Municipal drawing/2.jpg" >
+    
+    
+          <img class="ttower" src="../images/Architecture page co ntent/Foe arch website/Municipal drawing/3.jpg" >
+    
+    
+          <img class="ttower" src="../images/Architecture page co ntent/Foe arch website/Municipal drawing/4.jpg" >
+    
+    
+          <img class="ttower" src="../images/Architecture page co ntent/Foe arch website/Municipal drawing/5.jpg" >
+    
+    
+          <img class="ttower" src="../images/Architecture page co ntent/Foe arch website/Municipal drawing/6.jpg" >
+    
+        </div>
+       </div>
+       <script>
+        var sidem=document.getElementById("sidemenu");
+        function openmenu(){
+          sidem.style.right='0';
+        }
+        function closemenu(){
+          sidem.style.right='-200px';
+        }
+    
+      </script>
+</body>
+</html>

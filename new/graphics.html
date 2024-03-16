@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphics</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://kit.fontawesome.com/0e99801d91.js" crossorigin="anonymous"></script>
+    <style>
+      .head-in{
+        color: #fff; text-align: center; padding: 10px; font-size: 20px; margin-top: 15px;
+      }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+          <nav>
+            <img src="images/atlaspk.png" class="logo">
+            <ul id="sidemenu">
+              <li><a href="index.html">Home</a></li>
+             
+              <li><a href="portfolio.html">Work</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+          </nav>
+        </div>
+        <div id="graphics-work" >
+          <h2 style="color: #fff; margin-top: 20px; padding: 20px; font-size: 40px;text-align: center;">Graphics Work</h2>
+          <p style="text-align: center;">In dots and lines, shadows play,</p>
+          <p style="text-align: center;">Shapes and highlights, stories convey.</p>
+          
+        </div>   <div class="overlay" onclick="hideImage()">
+          <img class="enlarged-image" id="enlargedImg">
+        </div>
+        <div id="portfolio">
+            <div class="container">
+              
+                <div class="work-list">
+                
+                  <div class="work">
+                    <img src="images/graphics/1.kafkaesque.jpg" onclick="showImage('images/graphics/1.kafkaesque.jpg')">
+                    <h3 class="head-in" >Kafkaesque</h3>
+                    
+                  </div>
+                  <div class="work">
+                    <img src="images/graphics/2..jpg" onclick="showImage('images/graphics/2..jpg')">
+                    <h3 class="head-in" >Phantom Sky</h3>
+                    
+                  </div>
+                  <div class="work">
+                    <img src="images/graphics/you new.png" onclick="showImage('images/graphics/3..jpg')">
+                    <h3 class="head-in" >You</h3>
+                    
+                  </div>
+                  <div class="work">
+                    <img src="images/graphics/falling new.png" onclick="showImage('images/graphics/4,FALLING3.jpg')">
+                    <h3 class="head-in"  >Falling</h3>
+                    
+                  </div>
+                  <div class="work">
+                    <img src="images/graphics/5.wanderer me.jpg" onclick="showImage('images/graphics/5.wanderer me.jpg')">
+                    <h3 class="head-in" >Wanderer</h3>
+         </div>
+                  
+                  <div class="work">
+                 
+                    <img src="images/graphics/27.nights  lights.jpg" onclick="showImage('images/graphics/27.nights  lights.jpg')">
+                    <h3 class="head-in" >Nights Lights</h3>
+                  </div>
+                  <div class="work">
+                    
+                    <img src="images/graphics/n sun.png" onclick="showImage('images/graphics/32sun city.jpg')">
+                    <h3 class="head-in">Sun City</h3>
+                    
+                  </div>
+                  <div class="work">
+                    <img src="images/graphics/8.wild dream.jpg" onclick="showImage('images/graphics/8.wild dream.jpg')">
+                    <h3 class="head-in" >Wild Dream</h3>
+                    
+                  </div>
+                  <div class="work">
+                    <img src="images/graphics/9.wild.jpg" onclick="showImage('images/graphics/9.wild.jpg')">
+                    <h3 class="head-in" >Wild</h3>
+                    
+                  </div>
+                  <div class="work">
+                    <img src="images/graphics/10.TIME.jpg" onclick="showImage('images/graphics/10.TIME.jpg')">
+                    <h3 class="head-in" >Time</h3>
+                    
+                  </div>
+                  <div class="work">
+                    <img src="images/graphics/11.city.jpg" onclick="showImage('images/graphics/11.city.jpg')">
+                    <h3 class="head-in" >City</h3>
+                    
+                  </div>
+                  <div class="work">
+                    <img src="images/graphics/12.future.jpg" onclick="showImage('images/graphics/12.future.jpg')">
+                    <h3 class="head-in" >Future</h3>
+                  </div>
+                  <div class="work">
+                    <img src="images/graphics/13.BIRD.jpg" onclick="showImage('images/graphics/13.BIRD.jpg')">
+                    <h3 class="head-in" > Bird</h3>
+                  </div>
+                  <div class="work">
+                    <img src="images/graphics/14.Dream Dunes.jpg" onclick="showImage('images/graphics/14.Dream Dunes.jpg')">
+                    <h3 class="head-in" >Dream Dunes</h3>
+                  </div>
+                  <div class="work">
+                    <img src="images/graphics/15.HERO 1.jpg" onclick="showImage('images/graphics/15.HERO 1.jpg')">
+                    <h3 class="head-in" >Hero</h3>
+                  </div>
+                  <div class="work">
+                    <img src="images/graphics/nwolf.png" onclick="showImage('images/graphics/16..WOLF.png')">
+                    <h3 class="head-in" > Wolf</h3>
+                  </div>
+                  <div class="work">
+                    <img src="images/graphics/17.the trial.jpg" onclick="showImage('images/graphics/17.the trial.jpg')">
+                    <h3 class="head-in" > The Trial</h3>
+                  </div>
+                  <div class="work">
+                    <img src="images/graphics/N SPACE'.png" onclick="showImage('images/graphics/18.ad astra.jpg')">
+                    <h3 class="head-in" >Ad Astra</h3>
+                  </div>
+                  <div class="work">
+                    <img src="images/graphics/19.alright alright.jpg" onclick="showImage('images/graphics/19.alright alright.jpg')">
+                    <h3 class="head-in" >Alright Alright</h3>
+                  </div>
+                  <div class="work">
+                    <img src="images/graphics/20.lumerience.jpg" onclick="showImage('images/graphics/20.lumerience.jpg')">
+                    <h3 class="head-in" >Lumerience</h3>
+                  </div>
+                  <div class="work">
+                    <img src="images/graphics/21.wastew.png" onclick="showImage('images/graphics/21.wastew.png')">
+                    <h3 class="head-in" >Tale of Time</h3>
+                  </div>
+                  <div class="work">
+                    <img src="images/graphics/22.work.jpg" onclick="showImage('images/graphics/22.work.jpg')">
+                    <h3 class="head-in" >Work</h3>
+                  </div>
+                  <div class="work">
+                    <img src="images/graphics/23.PAUSE.jpg" onclick="showImage('images/graphics/23.PAUSE.jpg')">
+                    <h3 class="head-in" >Pause</h3>
+                  </div>
+                  <div class="work">
+                    <img src="images/graphics/24.RAIN.jpg" onclick="showImage('images/graphics/24.RAIN.jpg')">
+                    <h3 class="head-in" >Rain</h3>
+                  </div>
+                  <div class="work">
+                    <img src="images/graphics/25.meow.jpg" onclick="showImage('images/graphics/25.meow.jpg')">
+                    <h3 class="head-in">Meow</h3>
+                  </div>
+                  <div class="work">
+                    <img src="images/graphics/26.man.jpg" onclick="showImage('images/graphics/26.man.jpg')">
+                    <h3 class="head-in" >Man</h3>
+                  </div>
+                  <div class="work">
+                    <img src="images/graphics/6,ghode pe sawar.jpg" onclick="showImage('images/graphics/6,ghode pe sawar.jpg')">
+                    <h3 class="head-in" >Ghode Pe Sawar</h3>
+                  </div>
+                  <div class="work">
+                    <img src="images/graphics/28.shell.jpg" onclick="showImage('images/graphics/28.shell.jpg')">
+                    <h3 class="head-in" >Shell</h3>
+                  </div>
+                  <div class="work">
+                    <img src="images/graphics/7.ONCE UPON A TIME2.jpg" onclick="showImage('images/graphics/7.ONCE UPON A TIME2.jpg')">
+                    <h3 class="head-in" >Once Upon a Time</h3>
+                  </div>
+                  <div class="work">
+                    <img src="images/graphics/N LOST.png" onclick="showImage('images/graphics/30.LOST.jpg')">
+                    <h3 class="head-in">Lost</h3>
+                  </div>
+                  <div class="work">
+                    <img src="images/graphics/31.OFFICE.jpg" onclick="showImage('images/graphics/31.OFFICE.jpg')">
+                    <h3 class="head-in">Office</h3>
+                  </div>
+                  <div class="work">
+                    
+                    <img src="images/graphics/29.BEND.jpg" onclick="showImage('images/graphics/29.BEND.jpg')">
+                    <h3 class="head-in">Bend</h3>
+                  </div>
+                  <div class="work">
+                    <img src="images/graphics/33.greece 1.jpg" onclick="showImage('images/graphics/33.greece 1.jpg')">
+                    <h3 class="head-in">Greece-1</h3>
+                  </div>
+                  <div class="work">
+                    <img src="images/graphics/34.greece 2.jpg" onclick="showImage('images/graphics/34.greece 2.jpg')">
+                    <h3 class="head-in">Greece-2</h3>
+                  </div>
+                   <div class="work">
+                    <img src="images/graphics/35,greece 3.jpg" onclick="showImage('images/graphics/35,greece 3.jpg')">
+                    <h3 class="head-in">Greece-3</h3>
+                  </div>
+                  <div class="work">
+                    <img src="images/graphics/36.skull man .png" onclick="showImage('images/graphics/36.skull man .png')">
+                    <h3 class="head-in">Skull Man</h3>
+                  </div>
+               
+      </div>
+            </div>
+          </div>
+          <div id="contact">
+            <div class="container">
+              <div class="row">
+                <div class="contact-left">
+                  <h1 class="subtitle">CONTACT ME</h1>
+                  <p><i class="fa-solid fa-paper-plane"></i>prathameshkawate@gmail.com</p>
+                  <p><i class="fa-solid fa-phone"></i>9657098514</p>
+                  <div class="social-icons">
+                    <a href="https://instagram.com/atlaspk_?igshid=MzMyNGUyNmU2YQ=="><i class="fa-brands fa-instagram"></i>  atlaspk</a>
+                  </div>
+                </div>
+                <div class="contact-right">
+                  <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" rows="8" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                  </form>
+                  <span id="msg"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> 
+   
+    <script>
+      function showImage(src) {
+           // Show the enlarged image overlay
+           var overlay = document.querySelector('.overlay');
+           overlay.style.display = 'flex';
+       
+           // Set the source of the enlarged image
+           
+           var enlargedImg = document.getElementById('enlargedImg');
+           enlargedImg.src = src;
+        
+    
+ 
+
+       }
+         function hideImage() {
+           // Hide the enlarged image overlay
+           var overlay = document.querySelector('.overlay');
+           overlay.style.display = '';
+         } 
+        
+    </script>
+    <script>
+      var sidem=document.getElementById("sidemenu");
+      function openmenu(){
+        sidem.style.right='0';
+      }
+      function closemenu(){
+        sidem.style.right='-200px';
+      }
+     
+    </script>
+ 
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../main.css">
+    <script src="https://kit.fontawesome.com/0e99801d91.js" crossorigin="anonymous"></script>
+    <style>
+     
+      .ttower_main{
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .ttower{
+        height: auto;
+        width: 70%;
+        padding: 5vh;
+        margin: 5vh,3vw;
+      }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+          <nav>
+            <img src="../images/atlaspk.png" class="logo">
+            <ul id="sidemenu">
+              <li><a href="/index.html">Home</a></li>
+              
+              <li><a href="/portfolio.html">Work</a></li>
+              <li><a href="/contact.html">Contact</a></li>
+              <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+          </nav>
+        </div >
+        <h1 style="text-align: center; font-size: 40px;">Zen Towers</h1>
+        <p id="para">A futuristic housing project, aptly named Zen Towers, nestled in the vibrant commercial hub of Panvel, takes inspiration from the intricate patterns of DNA. The design emphasizes organic, interconnected structures that mimic the double helix, creating a sense of harmony and unity within the complex. Each tower boasts a blend of residential and commercial spaces, fostering a dynamic environment that enhances the quality of life for its residents. Zen Towers promises a tranquil oasis in the heart of urban life, exemplifying the symbiosis of cutting-edge design and a serene living atmosphere.</p>
+        <div class="ttower_main" >
+          <img class="ttow"  >
+    
+          <img class="ttower" src="../images/Architecture page co ntent/Foe arch website/Zen Towers/Zen towers.jpg"  >
+    
+          <img class="ttower" src="../images/Architecture page co ntent/Foe arch website/Zen Towers/Zen towers2.jpg" >
+    
+    
+          <img class="ttower" src="../images/Architecture page co ntent/Foe arch website/Zen Towers/Zen towers3.jpg" >
+    
+    
+          <img class="ttower" src="../images/Architecture page co ntent/Foe arch website/Zen Towers/Zen towers4.jpg" >
+    
+    
+          <img class="ttower" src="../images/Architecture page co ntent/Foe arch website/Zen Towers/Zen towers5.jpg" >
+    
+    
+          <img class="ttower" src="../images/Architecture page co ntent/Foe arch website/Zen Towers/Zen towers6.jpg" >
+    
+        </div>
+       </div>
+       <script>
+        var sidem=document.getElementById("sidemenu");
+        function openmenu(){
+          sidem.style.right='0';
+        }
+        function closemenu(){
+          sidem.style.right='-200px';
+        }
+    
+      </script> 
+</body>
+</html>

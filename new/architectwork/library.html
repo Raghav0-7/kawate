@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../main.css">
+    <script src="https://kit.fontawesome.com/0e99801d91.js" crossorigin="anonymous"></script>
+    <style>
+
+      .ttower_main{
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .ttower{
+        height: auto;
+        width: 70%;
+        padding: 5vh;
+        margin: 5vh,3vw;
+      }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+          <nav>
+            <img src="../images/atlaspk.png" class="logo">
+            <ul id="sidemenu">
+              <li><a href="/index.html">Home</a></li>
+             
+              <li><a href="/portfolio.html">Work</a></li>
+              <li><a href="/contact.html">Contact</a></li>
+              <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+          </nav>
+        </div>
+        <h1 style="text-align: center; font-size: 40px;">Dnayashri</h1>
+        <p id="para">
+          The Ram Sutar Legacy Library in Dhule, dedicated to the great sculptor Ram Vanji Sutar, embraces a design inspired by the graceful, organic form of a seashell, echoing the fluidity and creativity of sculpture itself. The library’s exterior presents a dynamic, shell-like structure with gently curving walls and translucent panels, allowing natural light to filter in, providing an artistic touch to the design. Inside, the layout flows organically, creating an immersive experience for visitors. Sculpture galleries and reading spaces meld seamlessly, underscoring the connection between literature and the visual arts.
+          </p>
+        <div class="ttower_main" >
+          <img class="ttower" src="../images/Architecture page co ntent/Foe arch website/Library/panel.jpg"  >
+    
+        
+    
+        </div>
+       </div>
+       <script>
+        var sidem=document.getElementById("sidemenu");
+        function openmenu(){
+          sidem.style.right='0';
+        }
+        function closemenu(){
+          sidem.style.right='-200px';
+        }
+    
+      </script>
+</body>
+</html>

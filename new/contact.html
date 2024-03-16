@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://kit.fontawesome.com/0e99801d91.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+          <nav>
+            <img src="images/atlaspk.png" class="logo">
+            <ul id="sidemenu">
+              <li><a href="index.html">Home</a></li>
+              
+              <li><a href="portfolio.html">Work</a></li>
+              <li><a href="#contact.html">Contact</a></li>
+              <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+          </nav>
+        </div>
+
+
+
+
+
+
+
+
+
+    <div id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="contact-left">
+              <h1 class="subtitle">Contact Me</h1>
+              <p><i class="fa-solid fa-paper-plane"></i>prathameshkawate@gmail.com</p>
+              <p><i class="fa-solid fa-phone"></i>9657098514</p>
+              <div class="social-icons">
+            
+                <a href="https://instagram.com/atlaspk_?igshid=MzMyNGUyNmU2YQ=="><i class="fa-brands fa-instagram"></i> atlaspk</a>
+               
+              </div>
+            </div>
+            <div class="contact-right">
+              <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="8" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+              </form>
+              <span id="msg"></span>
+            </div>
+          </div>
+        </div>
+    
+</div>
+       
+      </div>
+      <div class="copyright">
+        <p>Copyright © Prathamesh.Made by Raghav.</p>
+      </div>
+      <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyhb9KnonVPqzT8DPahoJt9fwAjk-YBHE1kV8GxdI9Vjh41kS_dSdwVJts0hwJpzXJp/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+              msg.innerHTML = "Message sent successfully"
+              setTimeout(function(){
+                msg.innerHTML = ""
+              },4000)
+              form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+       <script>
+        var sidem=document.getElementById("sidemenu");
+        function openmenu(){
+          sidem.style.right='0';
+        }
+        function closemenu(){
+          sidem.style.right='-200px';
+        }
+    
+      </script>
+</body>
+</html>

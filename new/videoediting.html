@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+     
+      #tower_main{
+        display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+      }
+    
+    </style>
+    <script src="https://kit.fontawesome.com/0e99801d91.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+          <nav>
+            <img src="images/atlaspk.png" class="logo">
+            <ul id="sidemenu">
+              <li><a href="index.html">Home</a></li>
+              
+              <li><a href="portfolio.html">Work</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+          </nav>
+        </div>
+        <div id="graphics-work" >
+          <h2 style="color: #fff; margin-left: 35px;margin-top: 20px; padding: 20px; font-size: 40px;text-align: center;">Videography</h2>
+          <p style="text-align: center; margin-left: 35px;">In the flow of motion, tales are told,</p>
+          <p style="text-align: center; margin-left: 35px;">  Each gesture, a story, mine and bold.</p>
+
+          <div id="tower_main">
+            <a href="https://youtu.be/pX4_Vj3eJ08?si=zR5kWXlPVTuN1MAw"><img class="tower" style="width: 85%; text-align: center;flex-wrap: wrap;justify-content: center;margin: 70px;" src="images/thumbnaills/T13.jpg" ></a>
+            
+            <a href="videoedit2.html"><img class="tower" style="width: 85%; text-align: center;flex-wrap: wrap;justify-content: center;margin: 70px;" src="images/thumbnaills/T14.jpg" ></a>
+            <img class="tower" style="width: 85%; text-align: center;flex-wrap: wrap;justify-content: center;margin: 75px;" src="images/video3.jpg">
+          </div>
+          
+        </div>
+    </div>   
+    <script>
+      var sidem=document.getElementById("sidemenu");
+      function openmenu(){
+        sidem.style.right='0';
+      }
+      function closemenu(){
+        sidem.style.right='-200px';
+      }
+  
+    </script>
+</body>
+</html>
